@@ -4,6 +4,13 @@
 // 輸出說明: 請回傳出現次數
 
 let calcWord = function (content: string, keyword: string) {
+    let a = 0;
+    for (let i = 0; i < content.length; i++) {
+        if (content.charAt(i) === keyword) {
+            a += 1;
+        }
+    }
+    return a;
 
 }
 

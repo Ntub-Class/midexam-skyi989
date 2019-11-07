@@ -6,7 +6,20 @@
 
 
 let calc = function (calcString: string) {
-
+    let a = 0;
+    let b = 0;
+    String.prototype.includes = function(search, start) {
+        'use strict';
+        if (typeof start !== 'number') {
+          start = 0;
+        }
+        
+        if (start + search.length > this.length) {
+          return false;
+        } else {
+          return this.indexOf(search, start) !== -1;
+        }
+}
 }
 
 calc('8*2')
