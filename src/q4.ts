@@ -5,22 +5,12 @@
 // 提示: String.includes, String.split
 
 
+
 let calc = function (calcString: string) {
-    let a = 0;
-    let b = 0;
-    String.prototype.includes = function(search, start) {
-        'use strict';
-        if (typeof start !== 'number') {
-          start = 0;
-        }
-        
-        if (start + search.length > this.length) {
-          return false;
-        } else {
-          return this.indexOf(search, start) !== -1;
-        }
+    console.log(eval(calcString))
 }
-}
+    
+       
 
 calc('8*2')
 calc('1+1')
